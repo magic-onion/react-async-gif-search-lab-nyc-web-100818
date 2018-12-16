@@ -1,5 +1,12 @@
 # Giphy Search!
 
+{{ (this.props.gifs.length > 0) ?
+    <img src={this.props.gifs[0].url}>
+    <img src={this.props.gifs[1].url}>
+  :
+  <p>no gifs yet </p>
+}}
+
 ### Instructions
 
 You're going to be building out a Gif search using the Giphy API. The URL for
